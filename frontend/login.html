@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="./css/signin.css" rel="stylesheet">
+    <title>Log-in</title>
+</head>
+<body class="text-center">
+    <main class="form-signin">
+        <form>
+            <img class="mb-4" src="img/Icono.png" alt="">
+            <h1 class="h3 mb-3 fw-normal">Por favor inicie sesion</h1>
+            <div class="form-floating">
+                <input type="text" id="correo" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" id="pass" name="password" class="form-control" id="floatingPassword" placeholder="Password" minlength="6">
+                <label for="floatingPassword">Password</label>
+            </div>
+        </form>
+        <button class="w-100 btn btn-lg btn-primary" onclick="inicioSesion()">Iniciar sesion</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2020–2021</p>
+    </main>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/controlador-sesion.js"></script>
+</body>
+</html>
