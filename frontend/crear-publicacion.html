@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h3>Por favor llene los campos:</h3><br>
+        Titulo: <input type="text" name="titulo" id="titulo"><br>
+        Descripcion: <input type="text" name="descripcion" id="descripcion"><br>
+        precio: <input type="number" name="precio" id="precio"><br>
+        <select class="form-select" aria-label="Default select example" name="estado" id="estado"><br>
+            <option selected>Seleccione el estado</option>
+            <option value="1">Nuevo</option>
+            <option value="2">Usado</option>
+        </select>
+        <select class="form-select" aria-label="Default select example" name="categoria" id="categoria"><br>
+            <option selected>Seleccione categoria</option>
+            <option value="1">Camisas</option>
+            <option value="2">Pantalones</option>
+            <option value="3">Carteras</option>
+            <option value="4">Maquillaje</option>
+            <option value="5">Zapatos</option>
+            <option value="6">Vestidos</option>
+            <option value="8">Accesorios</option>
+        </select>
+    </form>
+    <form onsubmit="return false" class="oculto" method="post" enctype="multipart/form-data" id="formUpload">
+        Seleccione una imagen:
+        <input type="file" name="image" onchange="upload_img();">
+    </form>
+    <button type="button" onclick="prueba()">Crear</button>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/control-publicaciones.js"></script>
+</body>
+</html>
